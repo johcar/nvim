@@ -1,0 +1,7 @@
+require "core/options"
+require "core/keymap"
+require "core/plugins"
+require "core/colorscheme"
+require "plugin/nvim-tree"
+require "plugin/lspconfig"
+require "plugin/nvim-cmp"
