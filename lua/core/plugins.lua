@@ -40,9 +40,8 @@ lazy.setup({
       dependencies = { 'nvim-tree/nvim-web-devicons' },
     },
     -- Lsp setup
-    {
-      'neovim/nvim-lspconfig',
-    },
+    { 'neovim/nvim-lspconfig' },
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     -- Autocomplete
     {
       'hrsh7th/nvim-cmp',
