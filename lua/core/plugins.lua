@@ -33,7 +33,6 @@ lazy.setup({
 
     -- Icons
     { 'nvim-tree/nvim-web-devicons', lazy = true },
-    
     -- File explorer
     {'nvim-tree/nvim-tree.lua', dependencies = 'nvim-tree/nvim-web-devicons' },
     -- Bufferline
@@ -44,6 +43,10 @@ lazy.setup({
     -- Syntax highlights
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     -- Autocomplete
+    {
+      "L3MON4D3/LuaSnip",
+      dependencies = { "rafamadriz/friendly-snippets" },
+    },
     {
       'hrsh7th/nvim-cmp',
       -- load cmp on InsertEnter
