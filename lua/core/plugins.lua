@@ -35,10 +35,9 @@ lazy.setup({
     { 'nvim-tree/nvim-web-devicons', lazy = true },
     
     -- File explorer
-    {
-      'nvim-tree/nvim-tree.lua',
-      dependencies = { 'nvim-tree/nvim-web-devicons' },
-    },
+    {'nvim-tree/nvim-tree.lua', dependencies = 'nvim-tree/nvim-web-devicons' },
+    -- Bufferline
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
     -- Lsp setup
     { 'neovim/nvim-lspconfig' },
     { 'simrat39/rust-tools.nvim'},
