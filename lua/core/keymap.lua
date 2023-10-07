@@ -23,3 +23,14 @@ map('n', '<C-l>', '<C-w>l')
 map('n', '<leader>e', ':NvimTreeToggle<CR>')        -- open/close
 map('n', '<leader>r', ':NvimTreeRefresh<CR>')       -- refresh
 map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
+
+map('n', '<leader>1', ':b 1<CR>')
+map('n', '<leader>2', ':b 2<CR>')
+map('n', '<leader>3', ':b 3<CR>')
+map('n', '<leader>4', ':b 4<CR>')
+map('n', '<leader>5', ':b 5<CR>')
+map('n', '<leader>6', ':b 6<CR>')
+map('n', '<leader>7', ':b 7<CR>')
+map('n', '<leader>8', ':b 8<CR>')
+
+map('n', '<leader>q', ':bd<CR>')
