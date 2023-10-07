@@ -41,6 +41,8 @@ lazy.setup({
     },
     -- Lsp setup
     { 'neovim/nvim-lspconfig' },
+    { 'simrat39/rust-tools.nvim'},
+    -- Syntax highlights
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     -- Autocomplete
     {

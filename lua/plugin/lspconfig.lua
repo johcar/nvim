@@ -1,6 +1,5 @@
 local status_ok, lspconfig = pcall(require, 'lspconfig')
 if not status_ok then
-   print("fail: ", lspconfig)
   return
 end
 
@@ -55,7 +54,6 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
--- clangd
 lspconfig.clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities
@@ -70,3 +68,19 @@ lspconfig.tsserver.setup{
   on_attach = on_attach,
   capabilities = capabilities
 }
+
+-- rust tools - uses lspconfig under the hood
+local rust_tools_status_ok, rust_tools = pcall(require, 'rust-tools')
+if not rust_tools_status_ok then
+  return
+end
+
+rust_tools.setup({
+  server = {
+    on_attach = on_attach,
+    capabilities = capabilities
+  }
+})
+
+
+
